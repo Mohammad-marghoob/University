@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mohamad Aria"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-28 11:32:46 PM"/>
+        <attribute name="created" value="TW9oYW1hZCBBcmlhO0RFU0tUT1AtMDlTTUFCSjsyMDIzLTA0LTI4OzA2OjUwOjE2IFBNOzM0NDQ="/>
+        <attribute name="edited" value="TW9oYW1hZCBBcmlhO0RFU0tUT1AtMDlTTUFCSjsyMDIzLTA0LTI4OzExOjMyOjQ2IFBNOzE7MzU1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <input variable="n"/>
+            <while expression="n &lt; 0">
+                <input variable="n"/>
+            </while>
+            <for variable="counter" start="1" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial * counter"/>
+            </for>
+            <output expression="factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
